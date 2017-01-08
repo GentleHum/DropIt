@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		EB2476221E22A9E8001116BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2476211E22A9E8001116BB /* AppDelegate.swift */; };
-		EB2476241E22A9E8001116BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2476231E22A9E8001116BB /* ViewController.swift */; };
 		EB2476271E22A9E8001116BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2476251E22A9E8001116BB /* Main.storyboard */; };
 		EB2476291E22A9E8001116BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2476281E22A9E8001116BB /* Assets.xcassets */; };
 		EB24762C1E22A9E8001116BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB24762A1E22A9E8001116BB /* LaunchScreen.storyboard */; };
+		EB2476351E22AA47001116BB /* DropItView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2476341E22AA47001116BB /* DropItView.swift */; };
+		EB2476371E22AA62001116BB /* DropItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2476361E22AA62001116BB /* DropItViewController.swift */; };
+		EB2476391E22ABB4001116BB /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2476381E22ABB4001116BB /* UIKit+Extensions.swift */; };
+		EB24763B1E22B4F6001116BB /* FallingObjectBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24763A1E22B4F6001116BB /* FallingObjectBehavior.swift */; };
+		EB24763D1E22BD54001116BB /* NamedBezierPathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24763C1E22BD54001116BB /* NamedBezierPathsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB24761E1E22A9E8001116BB /* DropIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2476211E22A9E8001116BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB2476231E22A9E8001116BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB2476261E22A9E8001116BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB2476281E22A9E8001116BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB24762B1E22A9E8001116BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB24762D1E22A9E8001116BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2476341E22AA47001116BB /* DropItView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItView.swift; sourceTree = "<group>"; };
+		EB2476361E22AA62001116BB /* DropItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItViewController.swift; sourceTree = "<group>"; };
+		EB2476381E22ABB4001116BB /* UIKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		EB24763A1E22B4F6001116BB /* FallingObjectBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingObjectBehavior.swift; sourceTree = "<group>"; };
+		EB24763C1E22BD54001116BB /* NamedBezierPathsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamedBezierPathsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		EB2476201E22A9E8001116BB /* DropIt */ = {
 			isa = PBXGroup;
 			children = (
-				EB2476211E22A9E8001116BB /* AppDelegate.swift */,
-				EB2476231E22A9E8001116BB /* ViewController.swift */,
+				EB2476341E22AA47001116BB /* DropItView.swift */,
+				EB2476361E22AA62001116BB /* DropItViewController.swift */,
+				EB2476331E22AA15001116BB /* Supporting Files */,
 				EB2476251E22A9E8001116BB /* Main.storyboard */,
+				EB2476381E22ABB4001116BB /* UIKit+Extensions.swift */,
+				EB24763A1E22B4F6001116BB /* FallingObjectBehavior.swift */,
+				EB24763C1E22BD54001116BB /* NamedBezierPathsView.swift */,
+			);
+			path = DropIt;
+			sourceTree = "<group>";
+		};
+		EB2476331E22AA15001116BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB2476211E22A9E8001116BB /* AppDelegate.swift */,
 				EB2476281E22A9E8001116BB /* Assets.xcassets */,
 				EB24762A1E22A9E8001116BB /* LaunchScreen.storyboard */,
 				EB24762D1E22A9E8001116BB /* Info.plist */,
 			);
-			path = DropIt;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2476241E22A9E8001116BB /* ViewController.swift in Sources */,
+				EB2476371E22AA62001116BB /* DropItViewController.swift in Sources */,
+				EB2476351E22AA47001116BB /* DropItView.swift in Sources */,
+				EB24763D1E22BD54001116BB /* NamedBezierPathsView.swift in Sources */,
+				EB24763B1E22B4F6001116BB /* FallingObjectBehavior.swift in Sources */,
+				EB2476391E22ABB4001116BB /* UIKit+Extensions.swift in Sources */,
 				EB2476221E22A9E8001116BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
