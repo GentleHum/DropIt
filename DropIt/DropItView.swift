@@ -49,7 +49,6 @@ class DropItView: NamedBezierPathsView, UIDynamicAnimatorDelegate {
                 motionManager.startAccelerometerUpdates(to: OperationQueue.main) {
                     [unowned self] (data, error) in
                     if self.dropBehavior.dynamicAnimator != nil {
-                        
                         if var dx = data?.acceleration.x, var dy = data?.acceleration.y  {
                             switch UIDevice.current.orientation {
                             case .portrait: dy = -dy
